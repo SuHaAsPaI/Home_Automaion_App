@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/background"
+    android:padding="15dp"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/txtString"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="19dp"
+        android:text="@string/hub"
+        android:textColor="@android:color/white"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/benergy"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:textColor="#FFF"
+        android:text="@string/emg" />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/togglefan"
+        android:layout_alignLeft="@+id/txtString"
+        android:layout_marginBottom="24dp"
+        android:background="#FFF"
+        android:ems="10"
+        android:hint="@string/entermin"
+        android:inputType="numberDecimal" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/bsettimer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/editText1"
+        android:layout_alignBottom="@+id/editText1"
+        android:layout_alignRight="@+id/seekBar1"
+        android:textColor="#FFF"
+        android:text="@string/settimer" />
+
+    <SeekBar
+        android:id="@+id/seekBar1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText1"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="28dp"
+        android:background="#FFF" />
+
+    <ToggleButton
+        android:id="@+id/toggle1"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/toggle2"
+        android:layout_alignBottom="@+id/toggle2"
+        android:layout_alignLeft="@+id/txtString"
+        android:text=""
+        android:textColor="#FFF"
+        android:checked="false" />
+
+    <ToggleButton
+        android:id="@+id/togglefan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/seekBar1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:checked="false"
+        android:textColor="#FFF"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/tfanspeed"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:text="@string/faspeed"
+        android:gravity="center"
+        android:textColor="#FFF" />
+
+    <ToggleButton
+        android:id="@+id/toggle2"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/benergy"
+        android:layout_alignRight="@+id/txtString"
+        android:layout_marginBottom="22dp"
+        android:textColor="#FFF"
+        android:checked="false"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toggle1"
+        android:layout_marginRight="24dp"
+        android:layout_toLeftOf="@+id/togglefan"
+        android:textColor="#FFF"
+        android:text="@string/led1" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView2"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_alignLeft="@+id/bsettimer"
+        android:layout_marginLeft="22dp"
+        android:text="@string/led2"
+        android:textColor="#FFF" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/togglefan"
+        android:layout_alignBottom="@+id/togglefan"
+        android:layout_alignLeft="@+id/textView3"
+        android:text="@string/fa"
+        android:textColor="#FFF" />
+
+</RelativeLayout>
